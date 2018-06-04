@@ -309,22 +309,33 @@ padding-bottom: 1rem;
 #passions-section{
 	padding: 3rem 0 3rem 0;
 }
-.passions, .passions{
-	height: 400px;
+.passions{
+	background-color: #fff;
 }
 .passions p{
 	font-size: 1.2rem;
 	transform: translateY(50%);
 	padding: 0 1rem 0 1rem;
 }
+.passions img{
+	height: auto;
+	width: 100%;
+	opacity: 0.8;
+}
 .square-1{
 	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 .square-2{
 	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 .square-3{
 	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 /*References*/
 /*Footer*/
