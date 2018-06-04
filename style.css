@@ -98,13 +98,41 @@ padding-bottom: 1rem;
 }
 #skills li{
 	font-size: 1.2rem;
-	padding-top: 0.4rem;
+	padding-top: 0.6rem;
 	list-style-type: none;
 	text-align: justify;
 }
-#skills i.fas{
+#skills-list i.fas{
 	font-size: 1.5rem;
 	color: #5cb85c;
+	padding-right: 1rem;
+}
+.progress{
+	height: 10px;
+	margin-top: 1rem;
+}
+.skills-col i.fab{
+	font-size: 4rem;
+	width: 100%;
+	text-align: center;
+}
+.skills-col i.fas{
+	font-size: 4rem;
+	width: 100%;
+	text-align: center;
+	color: #343a40;
+}
+.jq-img{
+	text-align: center;
+}
+.jq-img img{
+	height: auto;
+	width: 13%;
+	position: relative;
+}
+.skills-col{
+	display: inline-block;
+	float: left;
 }
 /*Projects*/
 .cards-container{
