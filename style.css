@@ -1,7 +1,7 @@
 /*Reset*/
 body{
 padding-top: 55px;
-background-color: #ADC5D1;
+background-color: #cdebf9;
 }
 html, body{
 	height:100%;
@@ -11,21 +11,24 @@ html, body{
 }
 /*Navbar*/
 .navbar{
-	background-color: #fff;
+	background-color: #ffffff;
 }
 .navbar a{
 	color: #3f3f3f;
-	font-size: 1rem;
+	font-size: 1.1rem;
+}
+.navbar li{
+	padding-left: 1rem;
 }
 .navbar ul{
-	margin-right: 25%;
+	margin-right: 30%;
 }
 .navbar-brand{
 	margin-left: 25%;
 }
 /*About*/
 #about .container{
-	background-color: #fff;
+	background-color: #ffffff;
 	padding: 0;
 	height: auto;
 	margin: 20px auto;
@@ -58,6 +61,7 @@ html, body{
 .about-text p{
 	padding-top: 10px;
 	font-size: 1.3rem;
+	text-align: left;
 }
 .table li{
 	text-align: left;
@@ -70,7 +74,7 @@ html, body{
 }
 /*Skills*/
 .jumbotron{
-	background-color: #fff;
+	background-color: #ffffff;
 }
 #skills h1{
 text-align: center;
@@ -172,7 +176,7 @@ padding-bottom: 1rem;
 }
 /*Experience*/
 #timeline-section{
-	background-color: #fff
+	background-color: #ffffff;
 }
 .timeline-container{
 	padding-top: 3rem;
@@ -247,14 +251,14 @@ padding-bottom: 1rem;
 	right: -14px;
 	display: inline-block;
 	border-top: 14px solid transparent;
-	border-left: 14px solid #fff;
-	border-right: 0 solid #fff;
+	border-left: 14px solid #ffffff;
+	border-right: 0 solid #ffffff;
 	border-bottom: 14px solid transparent;
 	content: " ";
 }
 
 .timeline > li > .timeline-badge {
-	color: #fff;
+	color: #ffffff;
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -307,10 +311,17 @@ padding-bottom: 1rem;
 /*Timeline End*/
 /*Passions*/
 #passions-section{
-	padding: 3rem 0 3rem 0;
+	padding: 2rem 0 2rem 0;
+}
+#passions-section h1{
+	padding-bottom: 1rem;
+}
+#passions-section .container{
+	margin-bottom: 2rem;
 }
 .passions{
-	background-color: #fff;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 40px -10px rgba(59,66,71,1);
 }
 .passions p{
 	font-size: 1.2rem;
@@ -327,17 +338,40 @@ padding-bottom: 1rem;
 	margin: 0;
 	padding: 0;
 }
+.square-1-text{
+	background-color: #a5d8d8;
+}
 .square-2{
-	background-color: grey;
+	background-color: grey; 	
 	margin: 0;
 	padding: 0;
+}
+.square-2-text{
+	background-color: #ffb2b2; 
 }
 .square-3{
 	background-color: grey;
 	margin: 0;
 	padding: 0;
 }
+.square-3-text{
+	background-color: #fffacc;
+}
 /*References*/
+#reference-section{
+	background-color: #ffffff;
+}
+#reference-section h1{
+	padding-top: 2rem;
+	margin-bottom: 1rem;
+}
+#reference-section p, #reference-section h4{
+	padding-bottom: 1.5rem;
+	margin-bottom: 0; 
+}
+#reference-section p{
+	font-size: 1.rem;
+}
 /*Footer*/
 footer{
 	background-color: grey;
@@ -346,6 +380,6 @@ footer{
 footer p{
 	text-align: center;
 	font-size: 1.1rem;
-	color: #fff;
+	color: #ffffff;
 	padding-top: 1rem;
 }
