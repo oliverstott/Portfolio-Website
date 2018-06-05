@@ -10,8 +10,18 @@ html, body{
 	color: #343a40;
 }
 /*Navbar*/
+/*.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}*/
+
 .navbar{
-	background-color: #ffffff;
+	background-color: #cdebf9;
 }
 .navbar a{
 	color: #3f3f3f;
@@ -21,10 +31,13 @@ html, body{
 	padding-left: 1rem;
 }
 .navbar ul{
-	margin-right: 30%;
+	margin-right: 20%;
 }
 .navbar-brand{
-	margin-left: 25%;
+	margin-left: 20%;
+}
+.navbar-toggler-icon{
+	text-align: center;
 }
 /*About*/
 #about .container{
@@ -374,12 +387,12 @@ padding-bottom: 1rem;
 }
 /*Footer*/
 footer{
-	background-color: grey;
-	height: 70px;
+	background-color: #aadef4;
+	height: 60px;
 }
 footer p{
 	text-align: center;
 	font-size: 1.1rem;
-	color: #ffffff;
+	color: #343a40;
 	padding-top: 1rem;
 }

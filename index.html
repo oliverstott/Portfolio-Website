@@ -10,36 +10,55 @@
     <link href="style.css" rel="stylesheet">
     <link href="mediaqueries.css" rel="stylesheet">  
     <link rel="icon" href="#">
+    <script>
+    var shiftWindow = function() { scrollBy(0, -50) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
   </head>
-  <body>
+  <body onload="load()" data-spy="scroll" data-target="#navbar" data-offset="50">
     <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top">
-     <a class="navbar-brand" href="index.html"><img class="img-fluid brandimg" src="#"></a>
+  <nav class="navbar fixed-top navbar-expand-md navbar-light navbar-fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img class="img-fluid brandimg" src=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="collapse navbar-collapse" id="#navbarResponsive">
-    <ul class="navbar-nav nav-pills ml-auto">
-    <li class="nav-item active">
-        <a class="nav-link" href="#about">About</a>
-    </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#experience">Experience</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#passions">Passions</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-    </li>
-    </ul>
-  </nav>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="nav nav-pills ml-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="#about">About</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Explore</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#skills">Skills</a>
+      <a class="dropdown-item" href="#projects">Projects</a>
+      <a class="dropdown-item" href="#timeline-section">Work Experience</a>
+      <a class="dropdown-item" href="#passions-section">Passions</a>
+      <a class="dropdown-item" href="#reference-section">References</a>
+    </div>
+  </li>
+<!-- 
+  <li class="nav-item">
+    <a class="nav-link" href="#skills">Skills</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#projects">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#workexperience">Work Experience</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#passions">Passions</a>
+  </li> -->
+  <!-- <li class="nav-item">
+    <a class="nav-link disabled" href="#references">References</a>
+  </li> -->
+</ul>
+  </div>
+</nav>
   <!-- About -->
   <section id="about">
     <div class="container col-6 img-container">
@@ -49,8 +68,7 @@
           </div>
           <div class="col-7 about-text">
             <h1>Hi, I'm <span class="text-primary">Oliver Stott</span>.</h1>
-            <p class="job-title">Junior Web Developer & Designer<br> <small><i>Striving to become a full stack web developer</i>
-            </p>  
+            <p class="job-title">Junior Web Developer & Designer</p>  
                
               <div class="col-12">
                <ul class="table">
