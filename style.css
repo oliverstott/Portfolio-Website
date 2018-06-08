@@ -10,16 +10,6 @@ html, body{
 	color: #343a40;
 }
 /*Navbar*/
-/*.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}*/
-
 .navbar{
 	background-color: #6f8799;
 }
@@ -158,10 +148,14 @@ padding-bottom: 1rem;
 	display: inline-block;
 	float: left;
 }
+
 /*Projects*/
 .cards-container{
 	text-align: center;
 	padding-bottom: 3rem;
+}
+.card-2{
+	display: none;
 }
 .card{
 	margin: auto;
@@ -404,7 +398,7 @@ footer{
 footer p{
 	text-align: center;
 	font-size: 1.1rem;
-	color: #343a40;
+	color: #f0f3f4;
 	padding-top: 1rem;
 }
 /*Media QUeries*/
@@ -445,6 +439,7 @@ footer p{
 	.card-1{
 		display: none;
 	}
+
 	.card{
 		margin-left: auto !important; 
 		margin-right: auto !important;
@@ -459,13 +454,46 @@ footer p{
 	padding: 1.2rem;
 	margin-right: 1rem;
 }
-.timeline:before {
+	.timeline:before {
 	left: 7%;
 }
-.timeline > li > .timeline-badge {
+	.timeline > li > .timeline-badge {
 	left: 7%;
 }
-
+.timeline > li > .timeline-panel:before {
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+}
+.timeline > li > .timeline-panel:after {
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+}
+.square-1-text, .square-2-text, .square-3-text{
+	height: 31rem;
+}
+.square-1{
+	order:1;
+}
+.square-1-text{
+	order:2;
+}
+.square-2{
+	order:3;
+}
+.square-2-text{
+	order:4;
+}
+#passions-section{	
+	padding-bottom: 0;
+}
+#skills-list li.i{
+		list-style-position: outside !important;
+		display: none;
+	}
 
 /*// Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { ... }
