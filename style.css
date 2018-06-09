@@ -5,9 +5,11 @@ background-color: #cdebf9;
 }
 html, body{
 	height:100%;
-	width: 100%;
+	min-width: 100%;
 	font-family:'poppins', sans-serif;
 	color: #343a40;
+	padding: 0;
+	margin: 0;
 }
 /*Navbar*/
 .navbar{
@@ -65,7 +67,6 @@ html, body{
 	padding-left: 2rem;
 }
 .about-text h1{
-	padding-top: 1%;
 	text-align: center;
 }
 .about-text p{
@@ -81,6 +82,22 @@ html, body{
 }
 .table{
 	margin-left: -0.9rem;
+}
+.personal-statement{
+	background-color: #ffffff;
+	padding: 0;
+	height: auto;
+	margin: 20px auto;
+	text-align: center;
+	box-shadow: 0px 0px 40px -10px rgba(59,66,71,1);
+	border: 0.5px solid #72A7A3;
+}
+.personal-statement h1{
+	padding-top: 2rem;
+}
+.personal-statement p{
+	font-size: 1.2rem;
+	padding: 1rem 1.5rem 2rem 1.5rem
 }
 /*Skills*/
 .jumbotron{
@@ -115,6 +132,11 @@ padding-bottom: 1rem;
 	padding-top: 0.6rem;
 	list-style-type: none;
 	text-align: justify;
+	position: relative;
+}
+	#skills-list li i {
+  position: absolute;
+  left: -2rem
 }
 #skills-list i.fas{
 	font-size: 1.5rem;
@@ -154,14 +176,14 @@ padding-bottom: 1rem;
 	text-align: center;
 	padding-bottom: 3rem;
 }
-.card-2{
-	display: none;
-}
 .card{
 	margin: auto;
 	padding: 0;
 	display: inline-block;	
 	vertical-align: middle;
+}
+.card-4{
+	display: none !important;
 }
 .card-title{
 	font-size: 2rem;
@@ -243,7 +265,6 @@ padding-bottom: 1rem;
 	border-radius: 2px;
 	padding: 20px;
 	position: relative;
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 .timeline > li > .timeline-panel:before {
@@ -403,6 +424,7 @@ footer p{
 }
 /*Media QUeries*/
 /*// Extra small devices (portrait phones, less than 576px)*/
+
 @media (max-width: 575.98px) {
 	#about{
 		padding: 0 0.5rem 0 0.5rem;
@@ -424,6 +446,7 @@ footer p{
 		padding-left: 0;
 	}
 	.table li{
+		margin: auto;
 		padding-top: 0.3rem;
 		padding-left: 2rem;
 		text-align: left;	
@@ -432,9 +455,9 @@ footer p{
 		margin: 0 2rem 0 2rem;
 	}
 	#skills-list li{
-		padding: 0;
 		text-align: left;
-		padding-bottom: 0.5rem;
+		padding-bottom: 1rem;
+		
 	}
 	.card-1{
 		display: none;
@@ -449,16 +472,17 @@ footer p{
 		margin: 0 !important;
 	}
 	.timeline > li > .timeline-panel {
-	width: 80%;
+	width: 85%;
 	float: right;
 	padding: 1.2rem;
-	margin-right: 1rem;
 }
 	.timeline:before {
-	left: 7%;
+	left: 6%;
 }
 	.timeline > li > .timeline-badge {
-	left: 7%;
+	width: 44px;
+	height: 44px;
+	left: 6%;
 }
 .timeline > li > .timeline-panel:before {
 	border-left-width: 0;
@@ -472,6 +496,8 @@ footer p{
 	left: -14px;
 	right: auto;
 }
+
+
 .square-1-text, .square-2-text, .square-3-text{
 	height: 31rem;
 }
@@ -495,11 +521,16 @@ footer p{
 		display: none;
 	}
 
+
 /*// Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { ... }
+@media (max-width: 767.98px) {
+
+}
 
 /*// Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { ... }
 
 /*// Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
+
+}
