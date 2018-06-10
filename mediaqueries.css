@@ -1,0 +1,109 @@
+/*Media QUeries*/
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 300.98px) and (max-width: 1199.97px){
+	.card-1{display: none;}
+	.navbar-brand{
+	margin-left: 0;
+}
+}
+/*@media (min-width: 300.98px){
+	
+}
+@media (min-width: 575.98px){
+}*/
+/*// Small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px){
+	.navbar-brand{
+	margin-left: 10%;
+	margin-right: 20%;
+}
+.about-photo img{
+	width: 100%;
+	margin-left: 15%;
+	}
+}
+/*// Medium devices (tablets, less than 992px)*/
+@media (min-width: 991.98px){
+.navbar-brand img{
+	width: 75%;
+}
+.navbar-brand{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.timeline:before {
+  left: 50%;
+}
+.timeline > li > .timeline-panel {
+	width: 50%;
+	float: left;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	padding: 20px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li:not(.timeline-inverted) {
+	padding-right:90px;
+}
+.timeline > li.timeline-inverted {
+	padding-left:90px;
+}
+.timeline > li > .timeline-panel:before {
+	position: absolute;
+	top: 26px;
+	right: -15px;
+	display: inline-block;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #ccc;
+	border-right: 0 solid #ccc;
+	border-bottom: 15px solid transparent;
+	content: " ";
+}
+.timeline > li > .timeline-panel:after {
+	position: absolute;
+	top: 27px;
+	right: -14px;
+	display: inline-block;
+	border-top: 14px solid transparent;
+	border-left: 14px solid #fff;
+	border-right: 0 solid #fff;
+	border-bottom: 14px solid transparent;
+	content: " ";
+}
+.timeline > li > .timeline-badge {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+}
+/*// Large devices (desktops, less than 1200px)*/
+@media (min-width: 1199.98px) {
+.card-4{
+	display: none;
+}
+.timeline > li > .timeline-panel {
+	width: 50%;
+	float: left;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	padding: 20px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.square-1-text, .square-2-text, .square-3-text{
+ 	height: auto;
+}
+.square-1{
+	order:1;
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+}
+.square-1-text{
+	order:2;	
+}
+.square-2{
+	order:3;	
+}
+.square-2-text{
+	order:3;
+}
+}
