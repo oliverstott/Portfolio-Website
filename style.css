@@ -83,6 +83,16 @@ html, body{
 	font-size: 1.3rem;
 	text-align: center;
 }
+.degree{
+	font-size: 1rem;
+}
+.about-reference p{
+	padding: 1rem 0 1rem 0;
+	font-size: 1.2rem;
+}
+.about-reference i{
+	font-size: 2rem;
+}
 .table li{
 	margin: auto;
 	padding-top: 0.3rem;
@@ -146,7 +156,7 @@ padding-bottom: 1rem;
 	text-align: justify;
 	position: relative;
 }
-	#skills-list li i {
+#skills-list li i {
   position: absolute;
   left: -2rem
 }
