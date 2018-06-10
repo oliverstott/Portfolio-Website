@@ -1,6 +1,6 @@
 /*Reset*/
 body{
-padding-top: 55px;
+padding-top: 55px !important;
 background-color: #cdebf9;
 }
 html, body{
@@ -36,8 +36,7 @@ html, body{
 }
 /*About*/
 #about{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 0 0.5rem 0 0.5rem;
 }
 #about .container{
 	background-color: #ffffff;
@@ -51,7 +50,7 @@ html, body{
 .about-photo img{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	width: 85%;
+	width: 70%;
 	height: auto;
 	border-radius: 50%;
 	box-shadow: 0px 0px 40px -10px rgba(59,66,71,1);
@@ -63,25 +62,31 @@ html, body{
 	padding-left: 0;
 }
 .about-text{
-	padding-top: 4rem;
-	padding-left: 2rem;
+	margin: auto;
+	text-align: center;
+	padding: 1rem 0 3rem 0;
 }
 .about-text h1{
 	text-align: center;
+	float: none;
 }
 .about-text p{
+	float: none;
 	padding-top: 10px;
 	font-size: 1.3rem;
-	text-align: left;
+	text-align: center;
 }
 .table li{
-	text-align: left;
+	margin: auto;
+	padding-top: 0.3rem;
+	text-align: center;
 	list-style-type: none;
 	font-size: 1.1rem;
 	padding-bottom: 0.2rem;
 }
 .table{
-	margin-left: -0.9rem;
+	margin: 0;	
+	padding-left: 0;
 }
 .personal-statement{
 	background-color: #ffffff;
@@ -129,7 +134,7 @@ padding-bottom: 1rem;
 }
 #skills li{
 	font-size: 1.2rem;
-	padding-top: 0.6rem;
+	padding-top: 1rem;
 	list-style-type: none;
 	text-align: justify;
 	position: relative;
@@ -182,13 +187,10 @@ padding-bottom: 1rem;
 	display: inline-block;	
 	vertical-align: middle;
 }
-.card-4{
-	display: none !important;
-}
 .card-title{
 	font-size: 2rem;
 	text-align: center;
-	padding: 20px 0 10px 0;
+	padding: 2rem 0 2rem 0;
 	font-weight: bold;
 }
 .card-text{
@@ -197,7 +199,7 @@ padding-bottom: 1rem;
 .card-body{
 	font-size: 1.2rem;
 	text-align: left;
-	padding: 0 40px 0 40px
+	padding: 0 0.8rem 0 0.8rem;
 }
 .card-img-top{
 	height: auto;
@@ -235,7 +237,7 @@ padding-bottom: 1rem;
 	content: " ";
 	width: 3px;
 	background-color: #eeeeee;
-	left: 50%;
+	left: 6%;
 	margin-left: -1.5px;
 }
 .timeline > li {
@@ -259,38 +261,14 @@ padding-bottom: 1rem;
 	clear: both;
 }
 .timeline > li > .timeline-panel {
-	width: 46%;
-	float: left;
+	width: 85%;
+	float: right;
 	border: 1px solid #d4d4d4;
 	border-radius: 2px;
-	padding: 20px;
+	padding: 1.2rem;
 	position: relative;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-.timeline > li > .timeline-panel:before {
-	position: absolute;
-	top: 26px;
-	right: -15px;
-	display: inline-block;
-	border-top: 15px solid transparent;
-	border-left: 15px solid #ccc;
-	border-right: 0 solid #ccc;
-	border-bottom: 15px solid transparent;
-	content: " ";
-}
-
-.timeline > li > .timeline-panel:after {
-	position: absolute;
-	top: 27px;
-	right: -14px;
-	display: inline-block;
-	border-top: 14px solid transparent;
-	border-left: 14px solid #ffffff;
-	border-right: 0 solid #ffffff;
-	border-bottom: 14px solid transparent;
-	content: " ";
-}
-
 .timeline > li > .timeline-badge {
 	color: #ffffff;
 	width: 50px;
@@ -300,7 +278,7 @@ padding-bottom: 1rem;
 	text-align: center;
 	position: absolute;
 	top: 16px;
-	left: 50%;
+	left: 6%;
 	margin-left: -25px;
 	background-color: #999999;
 	z-index: 100;
@@ -309,18 +287,15 @@ padding-bottom: 1rem;
 	border-bottom-right-radius: 50%;
 	border-bottom-left-radius: 50%;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel {
 	float: right;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:before {
 	border-left-width: 0;
 	border-right-width: 15px;
 	left: -15px;
 	right: auto;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:after {
 	border-left-width: 0;
 	border-right-width: 14px;
@@ -348,10 +323,10 @@ padding-bottom: 1rem;
 	padding: 2rem 0 2rem 0;
 }
 #passions-section h1{
-	padding-bottom: 1rem;
+	padding-bottom: 0;
 }
 #passions-section .container{
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 .passions{
 	background-color: #ffffff;
@@ -373,20 +348,26 @@ padding-bottom: 1rem;
 	opacity: 0.8;
 }
 .square-1{
+	order:1;
 	background-color: grey;
 	margin: 0;
 	padding: 0;
 }
 .square-1-text{
+	order:2;
 	background-color: #a5d8d8;
+	height: 31rem;
 }
 .square-2{
+	order:3;
 	background-color: grey; 	
 	margin: 0;
 	padding: 0;
 }
 .square-2-text{
+	order:4;
 	background-color: #ffb2b2; 
+	height: 31rem;
 }
 .square-3{
 	background-color: grey;
@@ -395,6 +376,7 @@ padding-bottom: 1rem;
 }
 .square-3-text{
 	background-color: #fffacc;
+	height: 31rem;
 }
 /*References*/
 #reference-section{
@@ -424,113 +406,104 @@ footer p{
 }
 /*Media QUeries*/
 /*// Extra small devices (portrait phones, less than 576px)*/
-
-@media (max-width: 575.98px) {
-	#about{
-		padding: 0 0.5rem 0 0.5rem;
-	}
-	.about-photo img{
-		width: 70%;
-	}
-	.about-text{
-		margin: auto;
-		text-align: center;
-		padding: 1rem 0 3rem 0;
-	}
-	.about-text h1, .about-text p{
-		text-align: center;
-		float: none;
-	}
-	.table{
-		margin: 0;	
-		padding-left: 0;
-	}
-	.table li{
-		margin: auto;
-		padding-top: 0.3rem;
-		padding-left: 2rem;
-		text-align: left;	
-	}
-	#skills-list{
-		margin: 0 2rem 0 2rem;
-	}
-	#skills-list li{
-		text-align: left;
-		padding-bottom: 1rem;
-		
-	}
-	.card-1{
-		display: none;
-	}
-
-	.card{
-		margin-left: auto !important; 
-		margin-right: auto !important;
-		text-align: center;
-	}
-	.cards-container{
-		margin: 0 !important;
-	}
-	.timeline > li > .timeline-panel {
-	width: 85%;
-	float: right;
-	padding: 1.2rem;
+@media (min-width: 300.98px) and (max-width: 1199.97px){
+	.card-1{display: none;}
 }
+@media (min-width: 300.98px){
+	
+}
+@media (min-width: 575.98px){
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px){
+.about-photo img{
+	width: 100%;
+	margin-left: 15%;
+
+	}
+/*// Medium devices (tablets, less than 992px)*/
+@media (min-width: 991.98px){
+
+	/*Timeline Start*/
 	.timeline:before {
-	left: 6%;
+  left: 50%;
 }
-	.timeline > li > .timeline-badge {
-	width: 44px;
-	height: 44px;
-	left: 6%;
+.timeline > li > .timeline-panel {
+	width: 50%;
+	float: left;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	padding: 20px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li:not(.timeline-inverted) {
+	padding-right:90px;
+}
+
+.timeline > li.timeline-inverted {
+	padding-left:90px;
 }
 .timeline > li > .timeline-panel:before {
-	border-left-width: 0;
-	border-right-width: 15px;
-	left: -15px;
-	right: auto;
+	position: absolute;
+	top: 26px;
+	right: -15px;
+	display: inline-block;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #ccc;
+	border-right: 0 solid #ccc;
+	border-bottom: 15px solid transparent;
+	content: " ";
 }
 .timeline > li > .timeline-panel:after {
-	border-left-width: 0;
-	border-right-width: 14px;
-	left: -14px;
-	right: auto;
+
+	position: absolute;
+	top: 27px;
+	right: -14px;
+	display: inline-block;
+	border-top: 14px solid transparent;
+	border-left: 14px solid #fff;
+	border-right: 0 solid #fff;
+	border-bottom: 14px solid transparent;
+	content: " ";
 }
-
-
+.timeline > li > .timeline-badge {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+}
+/*// Large devices (desktops, less than 1200px)*/
+@media (min-width: 1199.98px) {
+.card-4{
+	display: none;
+}
+.timeline > li > .timeline-panel {
+	width: 50%;
+	float: left;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	padding: 20px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
 .square-1-text, .square-2-text, .square-3-text{
-	height: 31rem;
+ 	height: auto;
 }
 .square-1{
 	order:1;
+	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 .square-1-text{
 	order:2;
+	
 }
 .square-2{
 	order:3;
+	
 }
 .square-2-text{
-	order:4;
+	order:3;
 }
-#passions-section{	
-	padding-bottom: 0;
-}
-#skills-list li.i{
-		list-style-position: outside !important;
-		display: none;
-	}
-
-
-/*// Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
-
-}
-
-/*// Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
-
-/*// Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
-
 }
